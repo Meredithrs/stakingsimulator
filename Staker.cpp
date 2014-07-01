@@ -1,4 +1,4 @@
-#include "staker.h"
+#include "Staker.h"
 
 Staker::Staker(){
 	this->setAttack(99);
@@ -65,7 +65,7 @@ double Staker::getMaxAttackRoll(){
 		attackBonus	=	1;
 	}
 
-	return this->attack + attackBonus + 8;
+	return (this->attack + attackBonus + 8)*10;
 }
 
 double Staker::getMaxStrengthRoll(){
@@ -78,7 +78,7 @@ double Staker::getMaxStrengthRoll(){
 		strengthBonus	=	1;
 	}
 
-	return this->strength + strengthBonus + 13;
+	return this->strength + strengthBonus + 13)*10;
 }
 
 double Staker::getMaxDefenseRoll(){
@@ -91,7 +91,7 @@ double Staker::getMaxDefenseRoll(){
 		defenseBonus	=	1;
 	}
 
-	return this->defense + defenseBonus + 8;
+	return (this->defense + defenseBonus + 8)*10;
 }
 
 int Staker::getHitpoints(){
