@@ -3,19 +3,11 @@
 #include <stdlib.h>
 #include <time.h>
 
-#include "matrix.h"
-#include "Markov.h"
 #include "staker.h"
 
 using namespace std;
 
 int main(){
-	/*
-	MarkovMatrix m(32.0, 32.0);
-	m.set_probability(.6);
-	m.populate();
-	m.print();
-	*/
 	try{
 		Staker staker1;
 		staker1.setAttack(99);
